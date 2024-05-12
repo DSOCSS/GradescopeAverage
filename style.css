@@ -1,0 +1,66 @@
+:root{
+    --width: calc(min(100%, 750px));
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1{
+    font-size: calc(20px + 2vw);
+    text-align: center;
+}
+
+.instructionZone{
+    width: var(--width);
+    margin: 0 auto 0 auto;
+}
+
+textarea{
+    width: var(--width);
+    height: calc(min(30vh, 25vw));
+    margin: 0;
+    resize: none;
+}
+
+p, li{
+    font-size: calc(12px + 0.5vw);
+}
+
+a{
+    color: navy;
+}
+
+button{
+    border: none;
+    color: white;
+    border-radius: 30px;
+    margin-top: 5px;
+    font-size: calc(1vw + 16px);
+    background-color: #1ca9c4;
+}
+
+.hidden{
+    display: none;
+}
+
+#output p{
+    text-align: center;
+}
+
+#credits{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+#clubLink{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+#clubLink img{
+    border-radius: 10px;
+    height: calc(50px + 4vw);
+}

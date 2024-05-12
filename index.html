@@ -1,0 +1,55 @@
+<head>
+    <title>Gradescope Average</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./img/calculator.png">
+</head>
+
+<body>
+    <h1>Gradescope Average</h1>
+    <p style="text-align: center;">This website is a quick tool to calculate your average grades on Gradescope.</p>
+    <div id="inputDivContainer">
+        <div class="instructionZone">
+            <ol>
+                <li>Sign in to <a href="https://www.gradescope.com/" target="_blank"
+                        rel="noopener noreferrer">https://www.gradescope.com/</a></li>
+                <li>Navigate to the gradescope website of your class</li>
+                <li>Press Ctrl+A then Ctrl+C to copy all of the website's text to your clipboard</li>
+                <li>Return to this website, press Ctrl+V to paste the text into the textarea</li>
+                <li>Press the "Calculate Grade" button to calculate your average grade!</li>
+            </ol>
+        </div>
+        <div style="text-align: center;">
+            <textarea id="input"
+                placeholder="Copy+Paste your gradescope grades here to calculate an average..."></textarea><br>
+            <div class="instructionZone">
+                <p id="invalidInput" class="hidden" style="color: maroon">We did not find any grades in your input,
+                    please
+                    try again with different input. Make sure you are following the instructions properly.</p>
+            </div>
+            <button id="submit" onclick="getInput()">Calculate Grade</button>
+        </div>
+    </div>
+    <div id="outputZone" class="hidden">
+        <div id="output"></div>
+        <div style="text-align: center;">
+            <button onclick="showInputZone()">Re-calculate Grades</button>
+        </div>
+    </div>
+    <div class="instructionZone">
+        <p style="text-align: center;">
+            Note: This is a third-party website that is not officially affiliated or maintained by Gradescope. As of May
+            2024 this website is able to correctly parse
+            Gradescope's website, although it may need an update in the future.
+        </p>
+    </div>
+    <div id="credits">
+        <p style="text-align: center; background-color: white;">Programmed by<br>Arthur Zarins and <br>Connor Zhang</p>
+    </div>
+    <div id="clubLink">
+        <a href="https://dsocss.github.io/website" target="_blank" rel="noopener noreferrer">
+            <img src="./img/DSOCSS_logo.png">
+        </a>
+    </div>
+</body>
+<script src="script.js"></script>
