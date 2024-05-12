@@ -6,6 +6,10 @@ This website is not officially affiliated with Gradescope.
 
 Usage instructions are provided on the website.
 
+# Website Link
+
+The website's url is [https://dsocss.github.io/GradescopeAverage/](https://dsocss.github.io/GradescopeAverage/)
+
 # Authors
 
 This project was programmed by Arthur Zarins and Connor Zhang in 2024.
